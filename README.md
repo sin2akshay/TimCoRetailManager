@@ -13,9 +13,9 @@ Session | Topic | Completion Status
 7 | Dependency Injection in WPF | :heavy_check_mark:
 8 | Planning the Register | :heavy_check_mark:
 9 | SQL Database Table Creation | :heavy_check_mark:
-10 | WPF Login Form Creation
-11 | Wire Up the WPF Login form to the API
-12 | Login Form Error Handling
+10 | WPF Login Form Creation | :heavy_check_mark:
+11 | Wire Up the WPF Login form to the API | :heavy_check_mark:
+12 | Login Form Error Handling | :heavy_check_mark:
 13 | Getting User Data
 14 | Getting User Data (Part 2)
 15 | Sales Page Creation
