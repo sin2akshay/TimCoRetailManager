@@ -29,9 +29,11 @@ namespace TRMDesktopUI
         {
             _container.Instance(_container);
 
+            //Registering types for IoC?
             _container
                 .Singleton<IWindowManager, WindowManager>()
-                .Singleton<IEventAggregator, EventAggregator>();
+                .Singleton<IEventAggregator, EventAggregator>()
+                .Singleton<IAPIHelper, APIHelper>();
 
             GetType().Assembly.GetTypes()
                 .Where(type => type.IsClass)
@@ -45,6 +47,7 @@ namespace TRMDesktopUI
             DisplayRootViewFor<ShellViewModel>();
         }
 
+        //Pass a type(service) and a name(key) to get its instance
         protected override object GetInstance(Type service, string key)
         {
             return _container.GetInstance(service, key);
